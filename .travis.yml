@@ -1,0 +1,7 @@
+deploy:
+  provider: heroku
+  api_key:
+    secure: nzOVeQvj0VqMDfVw8JV5vLWCQ9E/ZzFmrKzJZT4oDIz9R6MQUn1bIgUFNgHGUqThVo8TwayJoHHQqUFRTX6gTtdtzmjxEhrhqZob2L3elHuIGR+xayRiFhrsYFvOQUxiioerVopv5SeYevSk4Sf8sCnRGQzomuM9JLT477yLN4g=
+  app: reservira
+  on:
+    repo: GanfOfFourOrFive/reservira
