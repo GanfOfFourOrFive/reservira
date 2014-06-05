@@ -19,4 +19,7 @@ deploy:
   on:
     repo: GanfOfFourOrFive/reservira
 notifications:
-  email: false    
+  email: false  
+  slack:
+    rooms:
+      - ganfoffourorfive:M8oPDrLhcUb55JaKrZIijmI5#general
