@@ -18,3 +18,5 @@ deploy:
   app: reservira
   on:
     repo: GanfOfFourOrFive/reservira
+notifications:
+  email: false    
