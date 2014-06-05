@@ -39,6 +39,8 @@ group :development, :test do
   gem 'spring'  
 end
 group :test do
+  gem 'codeclimate-test-reporter', require: nil  
+  gem 'simplecov'
   gem 'capybara'
   gem 'database_cleaner'
   gem 'faker'
