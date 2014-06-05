@@ -21,7 +21,7 @@ if ENV['CI']
 else
   require 'simplecov'
   SimpleCov.start
-end  
+end
 
 RSpec.configure do |config|
 # The settings below are suggested to provide a good initial experience
