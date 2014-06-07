@@ -1,2 +1,2 @@
 environment ENV['RACK_ENV']
-threads 0,5
+threads 0, 5
