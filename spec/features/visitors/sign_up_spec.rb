@@ -49,8 +49,8 @@ feature 'Sign Up', :devise do
   #   Then I see a missing password confirmation message
   # scenario 'visitor cannot sign up without password confirmation' do
   #  sign_up_with('test@example.com', 'please123', '')
-  #  expect(page).to have_content "Password confirmation não está de acordo com
-  # a confirmação"
+  #  expect(page).to have_content "Password confirmation não está de
+  # acordo com a confirmação"
   # end
 
   # Scenario: Visitor cannot sign up with mismatched password and confirmation
@@ -60,8 +60,8 @@ feature 'Sign Up', :devise do
   # scenario 'visitor cannot sign up with mismatched password and confirmation'
   # do
   #  sign_up_with('test@example.com', 'please123', 'mismatch')
-  #  expect(page).to have_content "Password confirmation não está de acordo com
-  # a confirmação"
+  #  expect(page).to have_content "Password confirmation não está de acordo
+  # com a confirmação"
   # end
 
 end
