@@ -18,6 +18,8 @@ deploy:
   app: reservira
   on:
     repo: GangOfFourOrFive/reservira
+  run:
+    - rake db:migrate
 addons:
   code_climate:
     repo_token: e9a6dd5ab425b356ac7bc438c5ef47986996de74799f70527bd69d48c2b053f0
