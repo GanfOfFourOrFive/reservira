@@ -18,6 +18,7 @@ gem 'therubyracer', :platform=>:ruby
 
 group :production do
   gem 'pg'
+  gem 'rails_12factor', '0.0.2'
 end
 
 group :development do
@@ -35,11 +36,11 @@ end
 group :development, :test do
   gem 'factory_girl_rails'
   gem 'rspec-rails', '>= 3.0.0.beta2'
-  gem 'sqlite3'  
-  gem 'spring'  
+  gem 'sqlite3'
+  gem 'spring'
 end
 group :test do
-  gem 'codeclimate-test-reporter', require: nil  
+  gem 'codeclimate-test-reporter', require: nil
   gem 'simplecov'
   gem 'capybara'
   gem 'database_cleaner'
