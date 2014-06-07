@@ -13,9 +13,9 @@ feature 'Sign out', :devise do
   scenario 'user signs out successfully' do
     user = FactoryGirl.create(:user)
     signin(user.email, user.password)
-    expect(page).to have_content 'Signed in successfully.'
+    expect(page).to have_content 'Login efetuado com sucesso!'
     click_link 'Sign out'
-    expect(page).to have_content 'Signed out successfully.'
+    expect(page).to have_content 'Saiu com sucesso.'
   end
 
 end

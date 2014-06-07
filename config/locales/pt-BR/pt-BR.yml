@@ -1,0 +1,12 @@
+pt-BR:
+  user:
+    sign_up: "Cadastrar-se"
+    sign_in: "Entrar"
+    sign_out: "Sair"
+    edit: "Editar"
+
+  helpers:
+    submit:
+      user:
+        create: "Cadastrar-se"
+        update: "Atualizar"
