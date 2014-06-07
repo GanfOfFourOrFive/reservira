@@ -20,12 +20,12 @@ module Reservira
       g.fixture_replacement :factory_girl, dir: "spec/factories"
     end
 
-    config.time_zone = 'Brasilia'
-    config.i18n.default_locale = :'pt-BR'
-    config.i18n.load_path += Dir["#{Rails.root.to_s}/config/locales/**/*.{rb,yml}"]
+    config.time_zone = "Brasilia"
+    config.i18n.default_locale = :"pt-BR"
+    config.i18n.load_path += Dir["#{Rails.root}/config/locales/**/*.{rb,yml}"]
     config.encoding = "utf-8"
     config.assets.enabled = true
-    config.assets.version = '1.0'
+    config.assets.version = "1.0"
     config.assets.paths << Rails.root.join("vendor", "assets", "fonts")
     I18n.enforce_available_locales = false
   end

@@ -22,7 +22,8 @@ feature 'User delete', :devise, js: true do
     visit edit_user_registration_path(user)
     click_button 'Cancel my account'
     page.driver.browser.switch_to.alert.accept
-    expect(page).to have_content 'Tchau! Sua conta foi cancelada com sucesso. Esperamos vê-lo novamente em breve.'
+    expect(page).to have_content "Tchau! Sua conta foi cancelada com sucesso.
+      Esperamos vê-lo novamente em breve."
   end
 
 end
