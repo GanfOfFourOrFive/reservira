@@ -21,7 +21,7 @@ feature 'Sign in', :devise do
   #   When I sign in with valid credentials
   #   Then I see a success message
   scenario 'user can sign in with valid credentials' do
-    user = FactoryGirl.create(:user)
+    user = FactoryGirl.create(:confirmed_user)
     signin(user.email, user.password)
     expect(page).to have_content 'Login efetuado com sucesso!'
   end
@@ -32,7 +32,7 @@ feature 'Sign in', :devise do
   #   When I sign in with a wrong email
   #   Then I see an invalid email message
   scenario 'user cannot sign in with wrong email' do
-    user = FactoryGirl.create(:user)
+    user = FactoryGirl.create(:confirmed_user)
     signin('invalid@email.com', user.password)
     expect(page).to have_content 'E-mail ou senha inválidos.'
   end
@@ -43,7 +43,7 @@ feature 'Sign in', :devise do
   #   When I sign in with a wrong password
   #   Then I see an invalid password message
   scenario 'user cannot sign in with wrong password' do
-    user = FactoryGirl.create(:user)
+    user = FactoryGirl.create(:confirmed_user)
     signin(user.email, 'invalidpass')
     expect(page).to have_content 'E-mail ou senha inválidos.'
   end

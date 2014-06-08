@@ -17,13 +17,15 @@ feature 'User edit', :devise do
   #   When I change my email address
   #   Then I see an account updated message
   scenario 'user changes email address' do
-    user = FactoryGirl.create(:user)
+    user = FactoryGirl.create(:confirmed_user)
     login_as(user, :scope => :user)
     visit edit_user_registration_path(user)
     fill_in 'Email', :with => 'newemail@example.com'
     fill_in 'Current password', :with => user.password
     click_button 'Update'
-    expect(page).to have_content 'Sua conta foi atualizada com sucesso.'
+    expect(page).to have_content 'Você atualizou a sua conta com sucesso,
+      mas o seu novo endereço de e-mail precisa ser confirmado. Por favor,
+      acesse-o e clique no link de confirmação que enviamos.'
   end
 
   # Scenario: User cannot edit another user's profile
@@ -31,7 +33,7 @@ feature 'User edit', :devise do
   #   When I try to edit another user's profile
   #   Then I see my own 'edit profile' page
   scenario "user cannot cannot edit another user's profile", :me do
-    me = FactoryGirl.create(:user)
+    me = FactoryGirl.create(:confirmed_user)
     other = FactoryGirl.create(:user, email: 'other@example.com')
     login_as(me, :scope => :user)
     visit edit_user_registration_path(other)
