@@ -18,8 +18,7 @@ deploy:
   app: reservira
   on:
     repo: GangOfFourOrFive/reservira
-  run:
-    - rake db:migrate
+
 addons:
   code_climate:
     repo_token: e9a6dd5ab425b356ac7bc438c5ef47986996de74799f70527bd69d48c2b053f0
@@ -33,3 +32,5 @@ deploy:
   api_key:
     secure: jl7m94tiJxJW8DfOXpato/yhp3kAgAlg7ySBnNe3xm+wIu2G5u6cGKssASFiqRMtpN3UAUf8/RSNUOCtAmS7LaP4347hfpHwgqNwEObiVgMrpYQDy+3ynbkRQmLo3CbhuyAnr65Q0NWq+qiaDQMMAqibZCPxzjX9k/lBBRcTrdI=
   app: reservira
+  run:
+    - rake db:migrate
