@@ -11,6 +11,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'bootstrap-sass'
 gem 'devise'
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
 gem 'pundit'
 gem 'simple_form'
 gem 'therubyracer', :platform=>:ruby
