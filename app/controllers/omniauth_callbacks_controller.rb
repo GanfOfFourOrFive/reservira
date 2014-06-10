@@ -5,9 +5,9 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
       current_user)
 
     if @user.persisted?
-      flash[:notice] = I18n.t
+      flash[:notice] = I18n.t(
         'devise.omniauth_callbacks.success',
-        kind: 'Google'
+        kind: 'Google')
 
       sign_in_and_redirect @user, event: :authentication
     else
