@@ -1,0 +1,14 @@
+<h2>New Locale</h2>
+<%= form_for(@locale) do |f| %>
+  <p>
+    <%= f.label :city, "Cidade" %><br />
+    <%= f.text_field :city %>
+  </p>
+  <p>
+    <%= f.label :address, "Endereço" %><br />
+    <%= f.text_field :address %>
+  </p>
+  <p>
+     <%= f.submit "Criar localidade" %>
+  </p>
+<% end %>
