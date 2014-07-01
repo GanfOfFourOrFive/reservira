@@ -20,6 +20,7 @@ class TablesController < ApplicationController
   end
 
   private
+
   def table_params
     params.require(:table).permit(:description, :slots, :company)
   end
