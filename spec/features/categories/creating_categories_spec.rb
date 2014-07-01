@@ -1,14 +1,14 @@
-require 'rails_helper'
+require "rails_helper"
 
-feature 'Criando Categorias' do
+feature "Criando Categorias" do
   scenario "posso criar uma categoria" do
-    visit '/'
+    visit "/"
 
-    click_link 'Nova Categoria'
+    click_link "Nova Categoria"
 
-    fill_in 'Nome', with: 'Categoria 1'
-    click_button 'Criar categoria'
+    fill_in "Nome", with: "Categoria 1"
+    click_button "Criar categoria"
 
-    expect(page).to have_content('Categoria foi criada.')
+    expect(page).to have_content("Categoria foi criada.")
   end
 end
