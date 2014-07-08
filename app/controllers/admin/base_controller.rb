@@ -1,7 +1,8 @@
-class Admin::BaseController < ApplicationController
-  before_filter :authenticate_user!
+module Admin
+  class BaseController < ApplicationController
+    before_action :authenticate_user!
 
-  def index
-
+    def index
+    end
   end
 end

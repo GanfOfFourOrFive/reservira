@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   resources :tables
 
   namespace :admin do
-    root :to => "base#index"
+    root to: "base#index"
   end
 end
