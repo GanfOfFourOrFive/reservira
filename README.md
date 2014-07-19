@@ -35,6 +35,6 @@ o seu código esteja limpo, caso contrário Hound CI e o Travis CI vão acabar c
 reputação no Github e na equipe.
 - Use o comando pull do git para puxar os arquivos do projeto:
 
-  git pull origin nome-da-feature
+    git pull origin nome-da-feature
 
 verifique se o Travis e Hound aprovaram sua submissão. Feito isso aguarde o code review.
