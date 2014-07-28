@@ -10,7 +10,6 @@ class LocalesController < ApplicationController
       redirect_to @locale, notice: "Localidade foi criada."
     else
       flash[:alert] = "Localidade não pode ser criada."
-
       render "new"
     end
   end
@@ -19,10 +18,12 @@ class LocalesController < ApplicationController
     @locale = Locale.find(params[:id])
   end
 
+
   private
   def locale_params
     params.require(:locale).permit(:city, :address)
   end
+
 
 end
 
