@@ -4,4 +4,8 @@ Rails.application.routes.draw do
   resources :users
   resources :locales
   resources :tables
+
+  namespace :admin do
+    root to: "base#index"
+  end
 end

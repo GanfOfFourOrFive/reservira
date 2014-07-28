@@ -1,4 +1,4 @@
-class LocalesController < ApplicationController
+class LocalesController < ApplicationControlle
   def new
     @locale = Locale.new
   end
@@ -23,6 +23,4 @@ class LocalesController < ApplicationController
   def locale_params
     params.require(:locale).permit(:city, :address)
   end
-
 end
-
