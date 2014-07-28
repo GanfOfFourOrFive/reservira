@@ -18,12 +18,11 @@ class LocalesController < ApplicationController
     @locale = Locale.find(params[:id])
   end
 
-
   private
+
   def locale_params
     params.require(:locale).permit(:city, :address)
   end
-
 
 end
 
