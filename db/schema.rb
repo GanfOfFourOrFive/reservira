@@ -13,9 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140630235005) do
 
-  create_table "products", force: true do |t|
-    t.string   "name"
-    t.string   "description"
+  create_table "locales", force: true do |t|
+    t.string   "city"
+    t.string   "address"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
