@@ -1,4 +1,4 @@
-class LocalesController < ApplicationControlle
+class LocalesController < ApplicationController
   def new
     @locale = Locale.new
   end
