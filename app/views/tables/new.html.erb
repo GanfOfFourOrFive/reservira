@@ -1,0 +1,18 @@
+<h2>New Table</h2>
+<%= form_for(@table) do |f| %>
+  <p>
+    <%= f.label :description, "Descrição" %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.label :slots, "Lugares" %><br />
+    <%= f.text_field :slots %>
+  </p>
+  <p>
+    <%= f.label :company, "Empresa" %><br />
+    <%= f.text_field :company %>
+  </p>
+  <p>
+     <%= f.submit "Salvar Mesa" %>
+  </p>
+<% end %>

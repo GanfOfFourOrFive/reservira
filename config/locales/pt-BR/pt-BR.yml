@@ -10,3 +10,10 @@ pt-BR:
       user:
         create: "Cadastrar-se"
         update: "Atualizar"
+
+  activerecord:
+    models:
+      category: Categoria
+    attributes:
+      category:
+        name: Nome

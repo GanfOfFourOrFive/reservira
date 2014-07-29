@@ -3,4 +3,9 @@ Rails.application.routes.draw do
   devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks' }
   resources :users
   resources :categories
+  resources :tables
+
+  namespace :admin do
+    root to: "base#index"
+  end
 end

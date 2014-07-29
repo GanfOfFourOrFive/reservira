@@ -1,0 +1,18 @@
+ <h2>Cadastro de categorias</h2>
+
+  <table>
+    <thead>
+      <tr>Nome</tr>
+    </thead>
+    <tbody>
+      <% if !@categories.blank? %>
+        <% @categories.each do |category| %>
+          <tr>
+            <td><%= category.name %></td>
+          </tr>
+        <% end %>
+      <% else %>
+        Nenhum registro encontrado!
+      <% end %>
+    </tbody>
+  </table>
