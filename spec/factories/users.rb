@@ -8,4 +8,8 @@ FactoryGirl.define do
   factory :confirmed_user, parent: :user do
     after(:create) { |user| user.confirm! }
   end
+
+  factory :admin_user, parent: :confirmed_user do
+    role :admin
+  end
 end

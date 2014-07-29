@@ -13,6 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20140630235005) do
 
+
   create_table "locales", force: true do |t|
     t.string   "city"
     t.string   "address"

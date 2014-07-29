@@ -17,3 +17,12 @@ feature "Criando Localidades" do
   end
 
 end
+
+
+feature "Listando Localidades" do
+  scenario "listando todos os registros cadastrados" do
+    visit locales_path
+
+    expect(page).to have_selector('h2', text: 'Cadastro de loalidades')
+  end
+end

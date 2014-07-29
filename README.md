@@ -21,12 +21,12 @@ ainda não conhece muito de GIT recomendamos que [assista esse tutorial completo
 - Faça um fork do projeto para a sua conta do github e clone no seu ambiente de
 desenvolvimento usando o comando:
 
-    git clone url-do-seu-clone
+  git clone url-do-seu-clone
   
 - Assuma a tarefa no Trello e então planeje o desenvolvimento de sua feature. O
 ideal é criar um novo branch para a sua feature com o comando:
 
-    git checkout -b nome-da-feature
+  git checkout -b nome-da-feature
   
 - Utilize TDD/BDD para guiar o processo de design e desenvolvimento, não é uma sugestão, é sua
 obrigação como desenvolvedor.

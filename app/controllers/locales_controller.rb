@@ -1,4 +1,9 @@
 class LocalesController < ApplicationController
+
+  def index
+    @locales = Locale.all
+  end
+
   def new
     @locale = Locale.new
   end
