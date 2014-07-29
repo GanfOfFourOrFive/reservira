@@ -1,0 +1,10 @@
+<h2>Nova Categoria</h2>
+<%= form_for(@category) do |f| %>
+  <p>
+    <%= f.label :name, "Nome" %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+     <%= f.submit "Criar categoria" %>
+  </p>
+<% end %>
