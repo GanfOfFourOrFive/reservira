@@ -2,17 +2,15 @@
 
   <table>
     <thead>
-      <tr>Nome</tr>
+      <tr>
+        <th>Nome</th>
+      </tr>
     </thead>
     <tbody>
-      <% if !@locales.blank? %>
-        <% @locales.each do |locale| %>
-          <tr>
-            <td><%= locale.city %></td>
-          </tr>
-        <% end %>
-      <% else %>
-        Nenhum registro encontrado!
+      <% @locales.each do |locale| %>
+        <tr>
+          <td><%= locale.city %></td>
+        </tr>
       <% end %>
     </tbody>
   </table>
