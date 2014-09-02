@@ -16,12 +16,3 @@ feature "Criando Localidades" do
     expect(page).to have_content("Localidade foi criada.")
   end
 end
-
-
-feature "Listando Localidades" do
-  scenario "listando todos os registros cadastrados" do
-    visit locales_path
-
-    expect(page).to have_selector("h2", text: "Cadastro de localidades")
-  end
-end
