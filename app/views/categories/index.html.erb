@@ -3,12 +3,15 @@
   <table>
     <thead>
       <tr>Nome</tr>
+      <tr>Ações</tr>
     </thead>
     <tbody>
       <% if !@categories.blank? %>
         <% @categories.each do |category| %>
           <tr>
             <td><%= category.name %></td>
+            <td><%= link_to "Editar" , edit_category_path(category) %>|
+              <%= link_to "Excluir", category, method: :delete, data: { confirm: 'Deseja realmente excluir?' } %></td>
           </tr>
         <% end %>
       <% else %>
