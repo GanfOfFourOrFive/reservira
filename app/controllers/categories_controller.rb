@@ -11,7 +11,7 @@ class CategoriesController < ApplicationController
     @category = Category.new(category_params)
 
     if @category.save
-      redirect_to @category, notice: "Categoria foi criada."
+      redirect_to categories_path, notice: "Categoria foi criada."
     else
       flash[:alert] = "Categoria não pode ser criada."
 
