@@ -1,0 +1,18 @@
+<%= form_for(@locale) do |f| %>
+
+  <%= render "shared/errors", object: f.object %>
+
+  <p>
+    <%= f.label :city, "Cidade" %><br />
+    <%= f.text_field :city %>
+  </p>
+  <p>
+    <%= f.label :address, "Endereço" %><br />
+    <%= f.text_field :address %>
+  </p>
+  <p>
+     <%= f.submit "Salvar localidade" %>
+  </p>
+<% end %>
+
+<%= link_to 'Voltar', locales_path %>

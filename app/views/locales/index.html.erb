@@ -4,13 +4,18 @@
     <thead>
       <tr>
         <th>Nome</th>
+        <th>Ações</th>
       </tr>
     </thead>
     <tbody>
       <% @locales.each do |locale| %>
         <tr>
           <td><%= locale.city %></td>
+          <td><%= link_to 'Editar', edit_locale_path(locale) %></td>
+          <td><%= link_to 'Excluir', locale, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
         </tr>
       <% end %>
     </tbody>
   </table>
+
+<%= link_to "Nova localidade", new_locale_path %>
