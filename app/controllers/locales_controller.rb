@@ -1,4 +1,5 @@
 class LocalesController < ApplicationController
+
   before_action :find_locale, only: [:edit, :update, :destroy]
 
   def index
